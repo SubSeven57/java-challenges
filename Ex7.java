@@ -8,7 +8,7 @@ public static void main(String[] args) {
   int i;
   int result;
 
-  System.out.print("Input a number. We'll multiply it unti 10: ");
+  System.out.print("Input a number. We'll multiply it until 10: ");
   input = keyboard.nextInt();
 
   for (i=1; i<=10; i++) {
