@@ -12,10 +12,6 @@ JJ  a     a   V  a     a
 public class Ex8 {
 public static void main(String[] args) {
 
-  int input;
-  int i;
-  int result;
-
   System.out.print("     J    a   v     v  a\n");
   System.out.print("     J   a a   v   v  a a\n");
   System.out.print("  J  J  aaaaa   V V  aaaaa\n");
