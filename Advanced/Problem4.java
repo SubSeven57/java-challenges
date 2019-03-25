@@ -1,6 +1,13 @@
 /*
 Write a Java program that has the user enter three decimal numbers. The program then outputs
 whether they are entered in strictly increasing order, strictly decreasing order, or neither.
+
+Enter value: 3.75
+Enter value: 5.9
+Enter value: 11.3
+
+INCREASING!
+
 */
 
 import java.util.Scanner;
