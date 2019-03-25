@@ -1,44 +1,35 @@
 /*
-Write a Java program that prompts the user to enter integers from the keyboard one
-at a time. The program stops reading integers once the user enters the same value
-three times consecutively (meaning three times, one after the other). Once input
-is completed the program is to display the message "Same entered 3 in a row"
+Write a Java program that has the user enter three decimal numbers. The program then outputs
+whether they are entered in strictly increasing order, strictly decreasing order, or neither.
 */
 
 import java.util.Scanner;
 
-public class Problem3 {
+public class Problem4 {
 public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 
-        int input;
-        int temp;
-        int counter = 1;
+        float inputOne = 0f;
+        float inputTwo = 0f;
+        float inputThree = 0f;
 
-        boolean run = true;
+        System.out.print("Enter value: ");
+        inputOne = keyboard.nextFloat();
+        System.out.print("Enter value: ");
+        inputTwo = keyboard.nextFloat();
+        System.out.print("Enter value: ");
+        inputThree = keyboard.nextFloat();
 
-        System.out.print("Enter an interger: ");
-        input = keyboard.nextInt();
-        temp = input;
-        do {
-                System.out.print("Enter an interger: ");
-                input = keyboard.nextInt();
+        if ((inputOne < inputTwo) && (inputTwo < inputThree)) {
+          System.out.println("\nINCREASING!");
+        }
 
-                if (input == temp) {
-                        counter++;
-                }
+        else if ((inputOne> inputTwo) && (inputTwo > inputThree)) {
+          System.out.println("\nDECREASING!");
+        }
 
-                else {
-                        counter = 1;
-                }
-
-                temp = input;
-
-                if (counter == 3) {
-                        System.out.println("\nSame interger 3 times in a row");
-                        run = false;
-                }
-
-        } while(run == true);
-}
+        else {
+          System.out.println("\nNEITHER!");
+        }
+      }
 }

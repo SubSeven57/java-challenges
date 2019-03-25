@@ -35,7 +35,7 @@ public static void main(String[] args) {
                 temp = input;
 
                 if (counter == 3) {
-                        System.out.println("Same interger 3 times in a row");
+                        System.out.println("\nSame interger 3 times in a row");
                         run = false;
                 }
 
