@@ -31,7 +31,7 @@ public static void main(String[] args) {
           System.out.println("\nINCREASING!");
         }
 
-        else if ((inputOne> inputTwo) && (inputTwo > inputThree)) {
+        else if ((inputOne > inputTwo) && (inputTwo > inputThree)) {
           System.out.println("\nDECREASING!");
         }
 
